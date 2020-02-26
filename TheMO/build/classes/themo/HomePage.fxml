@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="799.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="themo.HomePageController">
+  <children>
+    <AnchorPane layoutX="67.0" layoutY="142.0" prefHeight="317.0" prefWidth="486.0">
+      <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoToAddExpensesPageButtonPushed" prefHeight="33.0" prefWidth="146.0" text="Add Expenses">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button font="$x1" layoutX="14.0" layoutY="78.0" mnemonicParsing="false" onAction="#GoToViewTableButtonPushed" prefHeight="33.0" prefWidth="145.0" text="List All" />
+        <ComboBox editable="false" layoutX="14.0" layoutY="138.0" prefHeight="33.0" prefWidth="145.0" promptText="Search Using">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </AnchorPane>
+    <Label layoutX="268.0" layoutY="21.0" text="Welcome">
+      <font>
+        <Font name="System Bold" size="60.0" />
+      </font>
+    </Label>
+    <Label fx:id="timeLabel" layoutX="640.0" layoutY="109.0" text="" />
+  </children>
+</AnchorPane>
